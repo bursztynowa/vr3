@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" media="all" />
+</head>
+
+<body class="a-body ">
+    <a-scene>
+        <a-assets>
+          <img id="ground" src="images/podloga.jpg">
+          <img id="ceiling" src="images/sufit.jpg">
+          <img id="A" src="images/A.jpg">
+          <img id="B" src="images/B.jpg">
+          <img id="C" src="images/C.jpg">
+          <img id="D" src="images/D.jpg">
+        </a-assets>
+
+        
+        <a-plane id="ground" position="0 0 -3.5" rotation="-90 0 0" material="" geometry="width:10.5;height:11.5" src="#ground"></a-plane>
+
+        <a-plane id="A" height="8" width="3" rotation="0 180 0" material="" geometry="width:10.5" position="0 4 2.25" src="#A"></a-plane>
+        <a-plane id="B" height="8" width="3" position="-5.25 4 -3.5" rotation="0 90 0" material="" geometry="width:11.5" src="#B"></a-plane>
+        <a-plane id="C" height="8" width="1" position="0 4 -9.25" material="" geometry="width:10.5" src="#C"></a-plane>
+        <a-plane id="D" height="8" width="4" position="5.25 4 -3.5" rotation="0 -90 0" material="" geometry="width:11.5" src="#D"></a-plane>
+
+        <a-plane id="ceiling" position="0 8 -3.5" rotation="90 0 0" material="" geometry="height:11.5;width:10.5" src="#ceiling"></a-plane>
+
+        <a-entity camera="active: true" look-controls wasd-controls position="0 1.6 0" data-aframe-default-camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
